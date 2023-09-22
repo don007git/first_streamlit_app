@@ -21,6 +21,6 @@ my_default_selections = ['Avocado','Strawberries']
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(myfruit_df.index), my_default_selections)
 
 # Display myselections on the page.
-fruits_to_show = myfruit_df.loc[myselections]
+fruits_to_show = myfruit_df.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
