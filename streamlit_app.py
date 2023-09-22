@@ -17,7 +17,7 @@ myfruit_df = pd.read_csv(myfile)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 myfruit_df = myfruit_df.set_index("Fruit")
-my_default_selections = ['Avacado','Strawberries']
+my_default_selections = ['Avocado','Strawberries']
 myselections = streamlit.multiselect("Pick some fruits:", list(myfruit_df.index), my_default_selections)
 
 # Display myselections on the page.
